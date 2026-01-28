@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import * as Dialog from '@radix-ui/react-dialog';
 import UnstyledButton from '../UnstyledButton';
-import { QUERIES, COLORS, WEIGHTS } from '../../constants';
+import { WEIGHTS } from '../../constants';
 import Icon from '../Icon';
 import VisuallyHidden from '../VisuallyHidden';
 
@@ -74,14 +74,14 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled.a`
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.medium};
   text-decoration: none;
   font-size: 1.125rem;
   text-transform: uppercase;
 
   &:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `;
 
